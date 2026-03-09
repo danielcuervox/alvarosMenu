@@ -1,0 +1,27 @@
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.horario {
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #888;
+}
