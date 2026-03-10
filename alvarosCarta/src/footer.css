@@ -1,7 +1,7 @@
 .footer {
-  background-color: #333;
+  background-color: #b04609;
   color: white;
-  padding: 40px 20px;
+  padding: 20px 10px;
   margin-top: 50px;
   text-align: center;
 }
@@ -23,5 +23,5 @@
 .horario {
   font-style: italic;
   font-size: 0.8rem;
-  color: #888;
+  color: #cfcfcf;
 }

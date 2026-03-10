@@ -17,13 +17,13 @@ function App() {
       id: 1,
       nombre: "NACHOS CON CHILI DE CARNE",
       precio: "18.50€",
-      img: "/costillas.png",
+      img: "/nachosChileCarne.png",
     },
     {
       id: 2,
       nombre: "QUESADILLA DE POLLO Y GUACAMOLE",
       precio: "11.00€",
-      img: "/costillas.png",
+      img: "/quesadillaPollo.jpg",
     },
   ];
 
@@ -32,19 +32,19 @@ function App() {
       id: 1,
       nombre: "ENSALADA CÉSAR",
       precio: "12.50€",
-      img: "/alitas.png",
+      img: "/ensaladaCesar.jpg",
     },
     {
       id: 2,
       nombre: "ENSALADA DE RULO DE CABRA Y GULAS",
       precio: "14.50€",
-      img: "/costillas.png",
+      img: "/ensaladaGulas.jpg",
     },
     {
       id: 3,
       nombre: "ENSALADA TROPICAL DE GAMBAS",
       precio: "14.00€",
-      img: "/costillas.png",
+      img: "/ensaladaTropical.jpg",
     },
   ];
 
@@ -53,13 +53,13 @@ function App() {
       id: 1,
       nombre: "HAMBURGUESA ALVARO'S",
       precio: "10.50€",
-      img: "/alitas.png",
+      img: "/hamburguesa.jpg",
     },
     {
       id: 2,
       nombre: "HAMBURGUESA DE TERNERA Y RULO DE CABRA",
       precio: "14.00€",
-      img: "/costillas.png",
+      img: "/hamburguesaCabra.jpg",
     },
   ];
 
@@ -68,19 +68,19 @@ function App() {
       id: 1,
       nombre: "SÁNDWICH MIXTO | CON HUEVO",
       precio: "5.00€",
-      img: "/alitas.png",
+      img: "/sandwich.jpg",
     },
     {
       id: 2,
       nombre: "SÁNDWICH VEGETAL",
       precio: "5.00€",
-      img: "/costillas.png",
+      img: "/sandwichVegetal.jpg",
     },
     {
       id: 3,
       nombre: "SÁNDWICH VILLAROY",
       precio: "7.50€",
-      img: "/costillas.png",
+      img: "/sandwichVillaroy.jpg",
     },
   ];
 
@@ -89,7 +89,7 @@ function App() {
       id: 1,
       nombre: "ENTRECOT A LA PARRILLA",
       precio: "18.50€",
-      img: "/alitas.png",
+      img: "/entrecot.jpg",
     },
     {
       id: 2,
@@ -101,25 +101,25 @@ function App() {
       id: 3,
       nombre: "PAELLA (CARNE | MARISCO | MIXTA | VERDURAS)",
       precio: "*por encargo",
-      img: "/costillas.png",
+      img: "/paella.jpg",
     },
     {
       id: 4,
       nombre: "PARILLADA DE CARNE ESTILO ALVARO'S",
       precio: "26.50€",
-      img: "/costillas.png",
+      img: "/parrilladaCarne.jpg",
     },
     {
       id: 5,
       nombre: "PULPO A LA GALLEGA",
       precio: "22.50€",
-      img: "/costillas.png",
+      img: "/pulpoGallega.jpg",
     },
     {
       id: 6,
       nombre: "SEPIA A LA PLANCHA",
       precio: "18.00€",
-      img: "/costillas.png",
+      img: "/sepia.jpg",
     },
   ];
 
@@ -134,67 +134,67 @@ function App() {
       id: 2,
       nombre: "BOQUERONES FRITOS",
       precio: "13.50€",
-      img: "/costillas.png",
+      img: "/boquerones.jpg",
     },
     {
       id: 3,
       nombre: "CALAMARES A LA ROMANA",
       precio: "13.50",
-      img: "/costillas.png",
+      img: "/calamaresRomana.jpg",
     },
     {
       id: 4,
       nombre: "CAZÓN",
       precio: "13.00€",
-      img: "/costillas.png",
+      img: "/cazon.jpg",
     },
     {
       id: 5,
       nombre: "CHOPITOS DE HUELVA",
       precio: "14.00€",
-      img: "/costillas.png",
+      img: "/chopitos.jpg",
     },
     {
       id: 6,
       nombre: "COCHINILLO COCHIFRITO",
       precio: "14.00€",
-      img: "/costillas.png",
+      img: "/cochifrito.jpg",
     },
     {
       id: 7,
       nombre: "CROQUETAS DE JAMÓN",
       precio: "13.50€",
-      img: "/costillas.png",
+      img: "/croquetas.jpg",
     },
     {
       id: 8,
       nombre: "GAMBAS AL AJILLO",
       precio: "15.00€",
-      img: "/costillas.png",
+      img: "/gambasAjillo.jpg",
     },
     {
       id: 9,
       nombre: "HUEVOS ROTOS CON GULAS | JAMÓN",
       precio: "14.00€",
-      img: "/costillas.png",
+      img: "/huevosGulas.jpg",
     },
     {
       id: 10,
       nombre: "OREJA A LA PLANCHA",
       precio: "13.50€",
-      img: "/costillas.png",
+      img: "/oreja.jpg",
     },
     {
       id: 11,
       nombre: "PATATAS ALIOLI | BRAVIOLI",
       precio: "9.50€",
-      img: "/costillas.png",
+      img: "/patatasAlioli.jpg",
     },
     {
       id: 12,
       nombre: "REVUELTO DE GAMBAS Y GULAS",
       precio: "15.80€",
-      img: "/costillas.png",
+      img: "/revueltoGulas.jpg",
     },
   ];
 
@@ -203,31 +203,31 @@ function App() {
       id: 1,
       nombre: "BOCADILLO DE BACÓN Y QUESO",
       precio: "5.50€",
-      img: "/alitas.png",
+      img: "/bocadillo.jpg",
     },
     {
       id: 2,
       nombre: "BOCADILLO DE CALAMARES",
       precio: "7.00€",
-      img: "/costillas.png",
+      img: "/bocadilloCalamares.jpg",
     },
     {
       id: 3,
       nombre: "BOCADILLO DE JAMÓN SERRANO",
       precio: "6.50€",
-      img: "/costillas.png",
+      img: "/bocadilloSerrano.jpg",
     },
     {
       id: 4,
       nombre: "BOCADILLO DE LOMO Y QUESO",
       precio: "6.00€",
-      img: "/costillas.png",
+      img: "/bocadilloLomoQueso.jpg",
     },
     {
       id: 5,
       nombre: "BOCADILLO DE TORTILLA",
       precio: "6.00€",
-      img: "/costillas.png",
+      img: "/bocadilloTortilla.jpg",
     },
   ];
 
@@ -236,25 +236,25 @@ function App() {
       id: 1,
       nombre: "ARROZ CON LECHE",
       precio: "4.00€",
-      img: "/alitas.png",
+      img: "/arrozLeche.jpg",
     },
     {
       id: 2,
       nombre: "FLAN DE NUEVO | PUDDING",
       precio: "4.50€",
-      img: "/costillas.png",
+      img: "/flan.jpg",
     },
     {
       id: 3,
       nombre: "FRUTA DE TEMPORADA",
       precio: "4.70€",
-      img: "/costillas.png",
+      img: "/fruta.jpg",
     },
     {
       id: 4,
       nombre: "TARTA DE QUESO",
       precio: "5.50€",
-      img: "/costillas.png",
+      img: "/tartaQueso.jpg",
     },
   ];
 

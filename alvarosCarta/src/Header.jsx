@@ -20,22 +20,22 @@ function Header() {
         <ul>
           <li>
             <a href="#entrantes" onClick={() => setMenuAbierto(false)}>
-              Entrantes
+              Bebidas
             </a>
           </li>
           <li>
-            <a href="#ensaladas" onClick={() => setMenuAbierto(false)}>
-              Ensaladas
-            </a>
-          </li>
-          <li>
-            <a href="#hamburguesas" onClick={() => setMenuAbierto(false)}>
-              Hamburguesas
+            <a href="#entrantes" onClick={() => setMenuAbierto(false)}>
+              Promociones
             </a>
           </li>
           <li>
             <a href="#contacto" onClick={() => setMenuAbierto(false)}>
               Contacto
+            </a>
+          </li>
+          <li>
+            <a href="#hamburguesas" onClick={() => setMenuAbierto(false)}>
+              Nuestra Historia
             </a>
           </li>
         </ul>
