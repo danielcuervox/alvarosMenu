@@ -6,7 +6,10 @@ function Header() {
 
   return (
     <header className="header">
-      <div className="logo">Alvaro's</div>
+      <div className="logo">
+        <img src="./icons/logoAlvarosBlanco.png" alt="foto de entrantes" />
+        Alvaro's
+      </div>
 
       {/* Botón Hamburguesa */}
       <button className="menu-btn" onClick={() => setMenuAbierto(!menuAbierto)}>

@@ -1,6 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,900;1,6..96,900&display=swap");
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  width: 100%; /* Asegura que el contenedor raíz ocupe todo */
   text-align: center;
 }
 
@@ -10,6 +10,12 @@ body {
   background-color: rgb(207, 207, 207);
 }
 
+.main-container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .sectionTipoComida {
   background-color: bisque;
 }
@@ -17,7 +23,26 @@ body {
 .tituloComidas {
   background-color: #b04609;
   color: white;
-  width: 40%;
+
+  display: table;
+
+  /* Controlas el tamaño extra fuera del texto */
+  padding: 5px 10px 5px 20px; /* Arriba, Derecha (más largo), Abajo, Izquierda */
+
+  /* Separación con la sección de arriba y con los platos de abajo */
+  margin-top: 20px;
+  margin-bottom: 15px;
+
+  /* Alineación manual por si el contenedor padre tiene text-align: center */
+  margin-left: 0;
+  text-align: left;
+
+  /* Opcional: para que no sea excesivamente largo en nombres cortos */
+  min-width: 120px;
+}
+
+.tituloComidas img {
+  width: 25px;
 }
 
 .menu-item {
@@ -88,6 +113,12 @@ body {
   cursor: pointer;
   border-radius: 5px;
   font-weight: bold;
+}
+
+.btn-ver {
+  background-color: #d99973;
+  color: white;
+  font-size: 0.8rem;
 }
 
 @keyframes logo-spin {

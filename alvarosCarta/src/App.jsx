@@ -6,6 +6,7 @@ import viteLogo from "/vite.svg";
 import Footer from "./footer";
 import "./footer.css";
 import Header from "./Header";
+import Slider from "./Slider";
 import "./header.css";
 import "./App.css";
 
@@ -265,176 +266,200 @@ function App() {
   return (
     <>
       <Header />
-      <div>
-        <h1>Alavaro's</h1>
-      </div>
+      <Slider />
 
-      {/* entrantes */}
+      <div className="main-container">
+        {/* entrantes */}
+        <div className="sectionTipoComida">
+          <h2 className="tituloComidas">
+            ENTRANTES <img src="./icons/entrante.png" alt="foto de entrantes" />
+          </h2>
 
-      <div className="sectionTipoComida">
-        <h2 className="tituloComidas">ENTRANTES</h2>
-        <div className="menu-container">
-          {entrantes.map((plato) => (
-            <div
-              className="menu-item"
-              key={plato.id}
-              onClick={() => mostrarFoto(plato.img, plato.nombre)} // Ahora toda la fila activa la función
-              style={{ cursor: "pointer" }} // Para que salga la manita al pasar el ratón
-            >
-              <span className="nombre">{plato.nombre}</span>
-              <span className="precio">{plato.precio}</span>
-              <button className="btn-ver">Ver</button>
-            </div>
-          ))}
+          <div className="menu-container">
+            {entrantes.map((plato) => (
+              <div
+                className="menu-item"
+                key={plato.id}
+                onClick={() => mostrarFoto(plato.img, plato.nombre)} // Ahora toda la fila activa la función
+                style={{ cursor: "pointer" }} // Para que salga la manita al pasar el ratón
+              >
+                <span className="nombre">{plato.nombre}</span>
+                <span className="precio">{plato.precio}</span>
+                <button className="btn-ver">Ver</button>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
 
-      {/* ensaladas */}
-      <div className="sectionTipoComida">
-        <h2 className="tituloComidas">ENSALADAS</h2>
-        <div className="menu-container">
-          {ensaladas.map((plato) => (
-            <div
-              className="menu-item"
-              key={plato.id}
-              onClick={() => mostrarFoto(plato.img, plato.nombre)} // Ahora toda la fila activa la función
-              style={{ cursor: "pointer" }} // Para que salga la manita al pasar el ratón
-            >
-              <span className="nombre">{plato.nombre}</span>
-              <span className="precio">{plato.precio}</span>
-              <button className="btn-ver">Ver</button>
-            </div>
-          ))}
+        {/* ensaladas */}
+        <div className="sectionTipoComida">
+          <h2 className="tituloComidas">
+            ENSALADAS <img src="./icons/ensalada.png" alt="foto de entrantes" />
+          </h2>
+          <div className="menu-container">
+            {ensaladas.map((plato) => (
+              <div
+                className="menu-item"
+                key={plato.id}
+                onClick={() => mostrarFoto(plato.img, plato.nombre)} // Ahora toda la fila activa la función
+                style={{ cursor: "pointer" }} // Para que salga la manita al pasar el ratón
+              >
+                <span className="nombre">{plato.nombre}</span>
+                <span className="precio">{plato.precio}</span>
+                <button className="btn-ver">Ver</button>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
 
-      {/* hamburguesas */}
-      <div className="sectionTipoComida">
-        <h2 className="tituloComidas">HAMBURGUESAS</h2>
-        <div className="menu-container">
-          {hamburguesas.map((plato) => (
-            <div
-              className="menu-item"
-              key={plato.id}
-              onClick={() => mostrarFoto(plato.img, plato.nombre)}
-              style={{ cursor: "pointer" }}
-            >
-              <span className="nombre">{plato.nombre}</span>
-              <span className="precio">{plato.precio}</span>
-              <button className="btn-ver">Ver</button>
-            </div>
-          ))}
+        {/* hamburguesas */}
+        <div className="sectionTipoComida">
+          <h2 className="tituloComidas">
+            HAMBURGUESAS{" "}
+            <img src="./icons/hamburguesa.png" alt="foto de entrantes" />
+          </h2>
+          <div className="menu-container">
+            {hamburguesas.map((plato) => (
+              <div
+                className="menu-item"
+                key={plato.id}
+                onClick={() => mostrarFoto(plato.img, plato.nombre)}
+                style={{ cursor: "pointer" }}
+              >
+                <span className="nombre">{plato.nombre}</span>
+                <span className="precio">{plato.precio}</span>
+                <button className="btn-ver">Ver</button>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
 
-      {/* sandwiches */}
-      <div className="sectionTipoComida">
-        <h2 className="tituloComidas">SANDWICHES</h2>
-        <div className="menu-container">
-          {sandwiches.map((plato) => (
-            <div
-              className="menu-item"
-              key={plato.id}
-              onClick={() => mostrarFoto(plato.img, plato.nombre)}
-              style={{ cursor: "pointer" }}
-            >
-              <span className="nombre">{plato.nombre}</span>
-              <span className="precio">{plato.precio}</span>
-              <button className="btn-ver">Ver</button>
-            </div>
-          ))}
+        {/* sandwiches */}
+        <div className="sectionTipoComida">
+          <h2 className="tituloComidas">
+            SANDWICHES{" "}
+            <img src="./icons/sandwich.png" alt="foto de entrantes" />
+          </h2>
+          <div className="menu-container">
+            {sandwiches.map((plato) => (
+              <div
+                className="menu-item"
+                key={plato.id}
+                onClick={() => mostrarFoto(plato.img, plato.nombre)}
+                style={{ cursor: "pointer" }}
+              >
+                <span className="nombre">{plato.nombre}</span>
+                <span className="precio">{plato.precio}</span>
+                <button className="btn-ver">Ver</button>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
 
-      {/* especialidades */}
-      <div className="sectionTipoComida">
-        <h2 className="tituloComidas">ESPECIALIDADES</h2>
-        <div className="menu-container">
-          {especialidades.map((plato) => (
-            <div
-              className="menu-item"
-              key={plato.id}
-              onClick={() => mostrarFoto(plato.img, plato.nombre)}
-              style={{ cursor: "pointer" }}
-            >
-              <span className="nombre">{plato.nombre}</span>
-              <span className="precio">{plato.precio}</span>
-              <button className="btn-ver">Ver</button>
-            </div>
-          ))}
+        {/* especialidades */}
+        <div className="sectionTipoComida">
+          <h2 className="tituloComidas">
+            ESPECIALIDADES{" "}
+            <img src="./icons/alitas.png" alt="foto de entrantes" />
+          </h2>
+          <div className="menu-container">
+            {especialidades.map((plato) => (
+              <div
+                className="menu-item"
+                key={plato.id}
+                onClick={() => mostrarFoto(plato.img, plato.nombre)}
+                style={{ cursor: "pointer" }}
+              >
+                <span className="nombre">{plato.nombre}</span>
+                <span className="precio">{plato.precio}</span>
+                <button className="btn-ver">Ver</button>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
 
-      {/* raciones tradicionales */}
-      <div className="sectionTipoComida">
-        <h2 className="tituloComidas">RACIONES TRADICIONALES</h2>
-        <div className="menu-container">
-          {racionesTradicionales.map((plato) => (
-            <div
-              className="menu-item"
-              key={plato.id}
-              onClick={() => mostrarFoto(plato.img, plato.nombre)}
-              style={{ cursor: "pointer" }}
-            >
-              <span className="nombre">{plato.nombre}</span>
-              <span className="precio">{plato.precio}</span>
-              <button className="btn-ver">Ver</button>
-            </div>
-          ))}
+        {/* raciones tradicionales */}
+        <div className="sectionTipoComida">
+          <h2 className="tituloComidas">
+            RACIONES TRADICIONALES{" "}
+            <img src="./icons/paella.png" alt="foto de entrantes" />
+          </h2>
+          <div className="menu-container">
+            {racionesTradicionales.map((plato) => (
+              <div
+                className="menu-item"
+                key={plato.id}
+                onClick={() => mostrarFoto(plato.img, plato.nombre)}
+                style={{ cursor: "pointer" }}
+              >
+                <span className="nombre">{plato.nombre}</span>
+                <span className="precio">{plato.precio}</span>
+                <button className="btn-ver">Ver</button>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
 
-      {/* bocadillos */}
-      <div className="sectionTipoComida">
-        <h2 className="tituloComidas">BOCADILLOS</h2>
-        <div className="menu-container">
-          {bocadillos.map((plato) => (
-            <div
-              className="menu-item"
-              key={plato.id}
-              onClick={() => mostrarFoto(plato.img, plato.nombre)}
-              style={{ cursor: "pointer" }}
-            >
-              <span className="nombre">{plato.nombre}</span>
-              <span className="precio">{plato.precio}</span>
-              <button className="btn-ver">Ver</button>
-            </div>
-          ))}
+        {/* bocadillos */}
+        <div className="sectionTipoComida">
+          <h2 className="tituloComidas">
+            BOCADILLOS{" "}
+            <img src="./icons/bocadillo.png" alt="foto de entrantes" />
+          </h2>
+          <div className="menu-container">
+            {bocadillos.map((plato) => (
+              <div
+                className="menu-item"
+                key={plato.id}
+                onClick={() => mostrarFoto(plato.img, plato.nombre)}
+                style={{ cursor: "pointer" }}
+              >
+                <span className="nombre">{plato.nombre}</span>
+                <span className="precio">{plato.precio}</span>
+                <button className="btn-ver">Ver</button>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
 
-      {/* postres */}
-      <div className="sectionTipoComida">
-        <h2 className="tituloComidas">POSTRES</h2>
-        <div className="menu-container">
-          {postres.map((plato) => (
-            <div
-              className="menu-item"
-              key={plato.id}
-              onClick={() => mostrarFoto(plato.img, plato.nombre)}
-              style={{ cursor: "pointer" }}
-            >
-              <span className="nombre">{plato.nombre}</span>
-              <span className="precio">{plato.precio}</span>
-              <button className="btn-ver">Ver</button>
-            </div>
-          ))}
+        {/* postres */}
+        <div className="sectionTipoComida">
+          <h2 className="tituloComidas">
+            POSTRES <img src="./icons/entrante.png" alt="foto de entrantes" />
+          </h2>
+          <div className="menu-container">
+            {postres.map((plato) => (
+              <div
+                className="menu-item"
+                key={plato.id}
+                onClick={() => mostrarFoto(plato.img, plato.nombre)}
+                style={{ cursor: "pointer" }}
+              >
+                <span className="nombre">{plato.nombre}</span>
+                <span className="precio">{plato.precio}</span>
+                <button className="btn-ver">Ver</button>
+              </div>
+            ))}
+          </div>
         </div>
+
+        {fotoVisible && (
+          <div className="modal-overlay">
+            <div className="modal-content">
+              <h1 className="nombreComidaAlert">{fotoVisible.nombre}</h1>
+              <img src={fotoVisible.url} alt={fotoVisible.nombre} />
+              <button
+                className="btn-cerrar"
+                onClick={() => setFotoVisible(null)}
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        )}
       </div>
 
       <Footer />
-
-      {fotoVisible && (
-        <div className="modal-overlay">
-          <div className="modal-content">
-            <h1 className="nombreComidaAlert">{fotoVisible.nombre}</h1>
-            <img src={fotoVisible.url} alt={fotoVisible.nombre} />
-            <button className="btn-cerrar" onClick={() => setFotoVisible(null)}>
-              Cerrar
-            </button>
-          </div>
-        </div>
-      )}
     </>
   );
 }
