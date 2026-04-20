@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
@@ -7,8 +8,14 @@ function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <img src="./icons/logoAlvarosBlanco.png" alt="foto de entrantes" />
-        Alvaro's
+        <Link
+          to="/"
+          onClick={() => setMenuAbierto(false)}
+          className="logo-link"
+        >
+          <img src="./icons/logoAlvarosBlanco.png" alt="Logo de Alvaro's" />
+          <span>Alvaro's</span>
+        </Link>
       </div>
 
       {/* Botón Hamburguesa */}
@@ -21,25 +28,36 @@ function Header() {
       {/* Navegación */}
       <nav className={`nav-menu ${menuAbierto ? "active" : ""}`}>
         <ul>
+          {location.pathname !== "/" && (
+            <li>
+              <Link
+                to="/"
+                onClick={() => setMenuAbierto(false)}
+                style={{ fontWeight: "bold", color: "#ffffff" }}
+              >
+                Inicio
+              </Link>
+            </li>
+          )}
           <li>
-            <a href="#entrantes" onClick={() => setMenuAbierto(false)}>
+            <Link to="/bebidas" onClick={() => setMenuAbierto(false)}>
               Bebidas
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#entrantes" onClick={() => setMenuAbierto(false)}>
+            <Link to="/promos" onClick={() => setMenuAbierto(false)}>
               Promociones
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#contacto" onClick={() => setMenuAbierto(false)}>
+            <Link to="/contacto" onClick={() => setMenuAbierto(false)}>
               Contacto
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#hamburguesas" onClick={() => setMenuAbierto(false)}>
+            <Link to="/nuestraHistoria" onClick={() => setMenuAbierto(false)}>
               Nuestra Historia
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
