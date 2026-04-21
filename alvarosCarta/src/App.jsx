@@ -13,7 +13,7 @@ import { Carta } from "./Carta";
 import { Bebidas } from "./pages/Bebidas";
 import { Contacto } from "./pages/Contacto";
 import { Promos } from "./pages/Promos";
-import { NuestraHistoria } from "./pages/NuestraHistoria";
+import { Galeria } from "./pages/Galeria";
 
 function App() {
   return (
@@ -23,9 +23,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Carta />} />
         <Route path="/bebidas" element={<Bebidas />} />
-        <Route path="/promos" element={<Promos />} />
+        <Route path="/galeria" element={<Galeria />} />
         <Route path="/contacto" element={<Contacto />} />
-        <Route path="/nuestraHistoria" element={<NuestraHistoria />} />
       </Routes>
 
       <Footer />
