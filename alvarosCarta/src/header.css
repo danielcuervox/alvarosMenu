@@ -22,6 +22,17 @@
   display: inline-block;
 }
 
+.logo-link {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px;
+}
+
+.logo img {
+  display: inline-block !important;
+  margin: 0 !important;
+}
+
 .nav-menu ul {
   display: flex;
   list-style: none;
@@ -31,6 +42,13 @@
 .nav-menu a {
   color: white;
   text-decoration: none;
+}
+
+.menu-btn {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
 }
 
 /* Estilos Móvil */
@@ -52,7 +70,7 @@
 
   .nav-menu {
     position: absolute;
-    top: 60px;
+    top: 80px;
     left: -100%; /* Escondido a la izquierda */
     width: 100%;
     height: calc(100vh - 60px);
@@ -68,5 +86,23 @@
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
+    gap: 0;
+    width: 100%;
+  }
+
+  .nav-menu li {
+    width: 80%; /* La línea no ocupará todo el ancho, dejando margen a los lados */
+    text-align: center;
+  }
+
+  /* Aplicamos la línea divisoria */
+  .nav-menu li:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Línea blanca semitransparente */
+  }
+
+  .nav-menu a {
+    display: block; /* Para que el área de clic sea mayor */
+    padding: 1.5rem 0; /* Espaciado vertical entre las opciones */
+    font-size: 1.2rem;
   }
 }

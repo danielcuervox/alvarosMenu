@@ -4,16 +4,15 @@
   text-align: center;
 }
 
-body {
+/* body {
   margin: 0;
   padding: 0;
   background-color: rgb(207, 207, 207);
 }
-
+ */
 .main-container {
   max-width: 720px;
   margin: 0 auto;
-  padding: 20px;
 }
 
 .sectionTipoComida {
@@ -24,25 +23,24 @@ body {
   background-color: #b04609;
   color: white;
 
-  display: table;
+  /* CAMBIO CLAVE: De table a flex */
+  display: flex;
+  align-items: center; /* Alinea verticalmente icono y texto */
+  gap: 10px; /* Espacio entre texto e icono */
 
-  /* Controlas el tamaño extra fuera del texto */
-  padding: 5px 10px 5px 20px; /* Arriba, Derecha (más largo), Abajo, Izquierda */
-
-  /* Separación con la sección de arriba y con los platos de abajo */
+  padding: 5px 15px 5px 20px;
   margin-top: 20px;
   margin-bottom: 15px;
-
-  /* Alineación manual por si el contenedor padre tiene text-align: center */
   margin-left: 0;
   text-align: left;
-
-  /* Opcional: para que no sea excesivamente largo en nombres cortos */
   min-width: 120px;
+  width: fit-content; /* Para que no ocupe todo el ancho si no quieres */
 }
 
 .tituloComidas img {
   width: 25px;
+  height: auto;
+  display: inline-block; /* Evita el reseteo de Tailwind */
 }
 
 .menu-item {
@@ -89,6 +87,7 @@ body {
   text-align: center;
   max-width: 90%;
   color: #333;
+  position: relative;
 }
 
 /*título de la comida del alert*/
@@ -105,6 +104,30 @@ body {
   border-radius: 5px;
 }
 
+/*alergenos*/
+
+.alergenos-container {
+  display: flex;
+  gap: 2px;
+  margin-top: 4px;
+  background-color: rgb(207, 207, 207);
+}
+
+.icono-alergeno {
+  width: 30px; /* Muy pequeños para que no distraigan */
+  height: 30px;
+  opacity: 0.8; /* Un poco suaves */
+  filter: grayscale(20%); /* Opcional: para que no chillen mucho los colores */
+}
+
+.info-plato {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  flex-grow: 1;
+}
+
+/*botones de cerrar*/
 .btn-cerrar {
   background-color: #b04609;
   color: white;
@@ -113,6 +136,29 @@ body {
   cursor: pointer;
   border-radius: 5px;
   font-weight: bold;
+}
+
+.btn-cerrar-x {
+  position: absolute;
+  top: 10px; /* Ajusta para que sobresalga un poco hacia arriba */
+  right: 10px; /* Ajusta para que sobresalga hacia la derecha */
+
+  background-color: #b04609; /* Tu color naranja */
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 10%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1001;
 }
 
 .btn-ver {
