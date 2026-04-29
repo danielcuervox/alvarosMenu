@@ -2,7 +2,7 @@ import React from "react";
 
 export const Contacto = () => {
   return (
-    // <--- Abrimos paréntesis aquí
+
     <>
       <div className="main-container">
         <h2 className="tituloComidas">CONTACTO</h2>
