@@ -280,3 +280,78 @@ export const postres = [
     alergenos: ["huevo", "gluten"],
   },
 ];
+
+export const platosDesayunos = [
+  {
+    id: 1,
+    nombre:
+      "Barrita entera de tostada con tomate o mantequilla y mermelada + café",
+    precio: "3.20€",
+    img: "imgDesayunos/tostadaTomate.jpg",
+    alergenos: [],
+  },
+  {
+    id: 2,
+    nombre:
+      "Media barra de tostada con tomate o mantequilla y mermelada + café",
+    precio: "2.70€",
+    img: "imgDesayunos/tostadaTomate.jpg",
+    alergenos: [],
+  },
+  {
+    id: 3, //croissant
+    nombre: "Croissant con mantequilla y mermelada + café",
+    precio: "3.20€",
+    img: "imgDesayunos/croissant.jpg",
+    alergenos: [],
+  },
+  {
+    id: 4, //tosada aguacate
+    nombre: "Entera Tostada de aguacate + café",
+    precio: "5.40€",
+    img: "imgDesayunos/tostadaAguacate.jpg",
+    alergenos: [],
+  },
+  {
+    id: 5, //tosada aguacate MEDIA
+    nombre: "Media Tostada de aguacate + café",
+    precio: "3.70€",
+    img: "imgDesayunos/tostadaAguacate.jpg",
+    alergenos: [],
+  },
+  {
+    id: 6, //barrita serrano
+    nombre: "Barrita de serrano entera + café",
+    precio: "6.00€",
+    img: "imgDesayunos/tostadaSerrano.jpg",
+    alergenos: [],
+  },
+  {
+    id: 7,
+    nombre: "Media barrita de serrano + café",
+    precio: "4.80€",
+    img: "imgDesayunos/tostadaSerrano.jpg",
+    alergenos: [],
+  },
+  {
+    id: 8,
+    nombre: "Pincho de tortilla",
+    precio: "4.00€",
+    img: "imgDesayunos/pinchoTortilla.jpg",
+    alergenos: [],
+  },
+  {
+    id: 9,
+    nombre: "Tostada con huevo revuelto + café",
+    precio: "4.50€",
+    img: "imgDesayunos/tostadaHuevo.jpg",
+    alergenos: [],
+  },
+  {
+    id: 10,
+    nombre: "Zumo de narajan natural",
+    precio: "2.70€",
+    img: "imgDesayunos/zumoNaranja.jpg",
+    alergenos: [],
+  },
+];

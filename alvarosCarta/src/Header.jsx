@@ -40,6 +40,11 @@ function Header() {
             </li>
           )}
           <li>
+            <Link to="/desayunos" onClick={() => setMenuAbierto(false)}>
+              Desayunos
+            </Link>
+          </li>
+          <li>
             <Link to="/bebidas" onClick={() => setMenuAbierto(false)}>
               Bebidas
             </Link>
