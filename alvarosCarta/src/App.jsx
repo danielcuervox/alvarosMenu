@@ -14,6 +14,7 @@ import { Bebidas } from "./pages/Bebidas";
 import { Contacto } from "./pages/Contacto";
 import { Promos } from "./pages/Promos";
 import { Galeria } from "./pages/Galeria";
+import { Desayunos } from "./Desayunos";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Carta />} />
+        <Route path="/desayunos" element={<Desayunos />} />
         <Route path="/bebidas" element={<Bebidas />} />
         <Route path="/galeria" element={<Galeria />} />
         <Route path="/contacto" element={<Contacto />} />
